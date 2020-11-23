@@ -1,0 +1,29 @@
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+
+  .loadingLottie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    [aria-label='animation'] {
+      width: 80px !important;
+      height: 80px !important;
+    }
+  }
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    z-index: 998;
+  }
+}
