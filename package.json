@@ -1,5 +1,7 @@
 {
-  "version": "0.0.2",
+  "name": "{{name}}",
+  "version": "0.0.3",
+  "description": "{{ description }}",
   "scripts": {
     "start": "cross-env HOST=127.0.0.1 umi dev",
     "build": "umi build",
@@ -32,9 +34,15 @@
     "react-lottie": "^1.2.3",
     "umi": "^3.2.27",
     "ytu-mobile": "^0.0.22",
+    {{#if isAxios}}
     "axios": "^0.21.0",
+    {{/if}}
+    {{#if isReactRedux}}
     "react-redux": "^7.2.2",
+    {{/if}}
+    {{#if isRedux}}
     "redux": "^4.0.5",
+    {{/if}}
     "yorkie": "^2.0.0"
   },
   "devDependencies": {
