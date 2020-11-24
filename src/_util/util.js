@@ -71,7 +71,7 @@ const util = {
   //跳转到登录页面 history 是否清楚当前页面的历史记录
   goLogin: function(clearHistory) {
     //var h5_domain = config.H5_DOMAIN;
-    var query = url.parse(window.location.href, true).query || {};
+    var query = this.query();
     var unionId = query.unionId || '';
     var corpId = query.corpId || '';
     var loginUrl = `${config.TRANSFER}`;
